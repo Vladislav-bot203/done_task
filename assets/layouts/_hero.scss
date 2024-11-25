@@ -76,7 +76,7 @@
     @include MontserratAS();
     margin-top: 0;
     margin-bottom: 0;
-
+    transition: all 0.2s ease-in-out;
     &:hover {
         background-color: $color-static-white;
         color: $color-dark;

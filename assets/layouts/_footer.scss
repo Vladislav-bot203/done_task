@@ -34,7 +34,7 @@
   color: $color-dark;
   flex: 1;
   flex-shrink: 1;
-
+  
   &:hover {
     cursor: pointer;
 
@@ -66,11 +66,13 @@
 .footer__card__type {
   @include MontserratAL();
   color: $color-dark;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__card__name {
   @include MontserratHD3();
   color: $color-dark;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__info {
@@ -83,6 +85,10 @@
 .socials__container {
   display: flex;
   gap: 12px;
+}
+
+.socials__icon {
+  transition: all 0.2s ease-in-out;
 }
 
 .socials__item {
@@ -107,6 +113,7 @@
   @include Allura();
   color: $color-dark;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     color: $color-primary;

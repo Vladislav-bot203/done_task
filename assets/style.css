@@ -67,6 +67,7 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181C28;
+  transition: all 0.2s ease-in-out;
 }
 .navigation__link:hover {
   background-color: #FEEDED;
@@ -137,8 +138,10 @@ img {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 .explore__button {
@@ -154,6 +157,7 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  transition: all 0.2s ease-in-out;
 }
 .explore__button:hover {
   background-color: #FFFFFF;
@@ -389,6 +393,7 @@ img {
 .right:hover {
   background-color: #FFFFFF;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .right:hover .arrow-right {
   filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
@@ -533,6 +538,7 @@ img {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #181C28;
+  transition: all 0.3s ease-in-out;
 }
 
 .cta {
@@ -716,6 +722,7 @@ img {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #181C28;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__card__name {
@@ -726,6 +733,7 @@ img {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #181C28;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__info {
@@ -738,6 +746,10 @@ img {
 .socials__container {
   display: flex;
   gap: 12px;
+}
+
+.socials__icon {
+  transition: all 0.2s ease-in-out;
 }
 
 .socials__item {
@@ -768,6 +780,7 @@ img {
   letter-spacing: 0.05em;
   color: #181C28;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .page__author:hover {
   color: #FA4949;
@@ -828,6 +841,7 @@ img {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
 }
 .gifts__navigation__item:hover {
   background-color: rgba(255, 255, 255, 0.2);
