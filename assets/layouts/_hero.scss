@@ -76,12 +76,6 @@
     @include MontserratAS();
     margin-top: 0;
     margin-bottom: 0;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        background-color: $color-static-white;
-        color: $color-dark;
-        cursor: pointer;
-    }
 }
 
 .caption {
@@ -89,6 +83,17 @@
     margin-top: 0;
     margin-bottom: 0px;
     color: $color-static-white;
+}
+
+@media (hover : hover) {
+    .explore__button {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $color-static-white;
+            color: $color-dark;
+            cursor: pointer;
+        }
+    }
 }
 
 

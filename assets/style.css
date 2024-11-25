@@ -67,11 +67,6 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181C28;
-  transition: all 0.2s ease-in-out;
-}
-.navigation__link:hover {
-  background-color: #FEEDED;
-  color: #FA4949;
 }
 
 img {
@@ -86,9 +81,6 @@ img {
   align-self: center;
   justify-self: flex-end;
 }
-.burger:hover {
-  cursor: pointer;
-}
 
 @media (max-width: 768px) {
   .header__navigation {
@@ -96,6 +88,18 @@ img {
   }
   .burger {
     display: block;
+  }
+}
+@media (hover: hover) {
+  .navigation__link {
+    transition: all 0.3s ease-in-out;
+  }
+  .navigation__link:hover {
+    background-color: #FEEDED;
+    color: #FA4949;
+  }
+  .burger:hover {
+    cursor: pointer;
   }
 }
 @font-face {
@@ -157,12 +161,6 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  transition: all 0.2s ease-in-out;
-}
-.explore__button:hover {
-  background-color: #FFFFFF;
-  color: #181C28;
-  cursor: pointer;
 }
 
 .caption {
@@ -176,6 +174,16 @@ img {
   color: #FFFFFF;
 }
 
+@media (hover: hover) {
+  .explore__button {
+    transition: all 0.3s ease-in-out;
+  }
+  .explore__button:hover {
+    background-color: #FFFFFF;
+    color: #181C28;
+    cursor: pointer;
+  }
+}
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
@@ -390,15 +398,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.right:hover {
-  background-color: #FFFFFF;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-.right:hover .arrow-right {
-  filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
-}
-
 .slider__button {
   display: flex;
   align-items: center;
@@ -410,6 +409,16 @@ img {
   height: 24px;
 }
 
+@media (hover: hover) {
+  .right:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .right:hover .arrow-right {
+    filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
+  }
+}
 .best-gifts {
   background-color: #FA4949;
   background-image: url("./images/snow.png");
@@ -468,12 +477,6 @@ img {
   height: 342px;
   border-radius: 20px;
   background-color: #ECF3F8;
-}
-.card:hover {
-  cursor: pointer;
-}
-.card:hover .card__goal {
-  color: #FA4949;
 }
 
 .card__image {
@@ -541,6 +544,14 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
+@media (hover: hover) {
+  .card:hover {
+    cursor: pointer;
+  }
+  .card:hover .card__goal {
+    color: #FA4949;
+  }
+}
 .cta {
   padding: 60px 8px;
   background-color: #FA4949;
@@ -689,15 +700,6 @@ img {
   flex: 1;
   flex-shrink: 1;
 }
-.footer__card:hover {
-  cursor: pointer;
-}
-.footer__card:hover .footer__card__type {
-  color: #FA4949;
-}
-.footer__card:hover .footer__card__name {
-  color: #FA4949;
-}
 
 .footer__card__container {
   display: flex;
@@ -757,12 +759,6 @@ img {
   padding: 8px;
   display: block;
 }
-.socials__item:hover {
-  cursor: pointer;
-}
-.socials__item:hover .socials__icon {
-  filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
-}
 
 .rights {
   font-family: "Montserrat";
@@ -782,13 +778,30 @@ img {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-.page__author:hover {
-  color: #FA4949;
-}
 
 @media (max-width: 1050px) {
   .footer__cards__container {
     flex-direction: column;
+  }
+}
+@media (hover: hover) {
+  .page__author:hover {
+    color: #FA4949;
+  }
+  .socials__item:hover {
+    cursor: pointer;
+  }
+  .socials__item:hover .socials__icon {
+    filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
+  }
+  .footer__card:hover {
+    cursor: pointer;
+  }
+  .footer__card:hover .footer__card__type {
+    color: #FA4949;
+  }
+  .footer__card:hover .footer__card__name {
+    color: #FA4949;
   }
 }
 .best-gifts__page {
@@ -843,9 +856,6 @@ img {
   color: #FFFFFF;
   transition: all 0.4s ease-in-out;
 }
-.gifts__navigation__item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
 
 .active {
   background-color: rgba(250, 73, 73, 0.1);
@@ -866,6 +876,11 @@ img {
   }
   .gifts__navigation__item {
     padding: 12px 8px;
+  }
+}
+@media (hover: hover) {
+  .gifts__navigation__item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 .wrapper {

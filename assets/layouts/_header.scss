@@ -50,11 +50,6 @@
     border-radius: 12px;
     @include MontserratAS();
     color: $color-dark;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        background-color: $color-nav-hover-bacg;
-        color: $color-primary;
-    }
 }
 
 img {
@@ -67,10 +62,6 @@ img {
     height: 40px;
     align-self: center;
     justify-self: flex-end;
-
-    &:hover {
-        cursor: pointer;
-    }
 }
 
 @media (max-width : 768px) {
@@ -80,6 +71,23 @@ img {
 
     .burger {
         display: block;
+    }
+}
+
+
+@media (hover: hover) {
+    .navigation__link {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $color-nav-hover-bacg;
+            color: $color-primary;
+        }
+    }
+
+    .burger {
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

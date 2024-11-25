@@ -34,18 +34,6 @@
   color: $color-dark;
   flex: 1;
   flex-shrink: 1;
-  
-  &:hover {
-    cursor: pointer;
-
-    .footer__card__type {
-      color: $color-primary;
-    }
-
-    .footer__card__name {
-      color: $color-primary;
-    }
-  }
 }
 
 .footer__card__container {
@@ -95,13 +83,6 @@
   height: 24px;
   padding: 8px;
   display: block;
-  &:hover {
-    cursor: pointer;
-    .socials__icon {
-      filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg)
-        brightness(103%) contrast(104%);
-    }
-  }
 }
 
 .rights {
@@ -114,14 +95,36 @@
   color: $color-dark;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-
-  &:hover {
-    color: $color-primary;
-  }
 }
 
 @media (max-width: 1050px) {
   .footer__cards__container {
     flex-direction: column;
+  }
+}
+
+@media (hover : hover) {
+  .page__author:hover {
+    color: $color-primary;
+  }
+
+  .socials__item:hover {
+    cursor: pointer;
+    .socials__icon {
+      filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg)
+        brightness(103%) contrast(104%);
+    }
+  }
+
+  .footer__card:hover {
+    cursor: pointer;
+
+    .footer__card__type {
+      color: $color-primary;
+    }
+
+    .footer__card__name {
+      color: $color-primary;
+    }
   }
 }

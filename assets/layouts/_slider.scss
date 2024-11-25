@@ -111,16 +111,6 @@
     border: 1px solid rgb(255, 255, 255, 40%);
 }
 
-.right:hover {
-    background-color: $color-static-white;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    .arrow-right {
-        filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg)
-        brightness(103%) contrast(104%);
-    }
-}
-
 .slider__button {
     display: flex;
     align-items: center;
@@ -130,4 +120,16 @@
 .arrow-left, .arrow-right {
     width: 24px;
     height: 24px;
+}
+
+@media (hover : hover) {
+    .right:hover {
+        background-color: $color-static-white;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        .arrow-right {
+            filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg)
+            brightness(103%) contrast(104%);
+        }
+    }
 }
